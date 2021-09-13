@@ -1,0 +1,166 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+     background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display';
+}
+
+
+#mainCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 30%;
+    position: absolute;
+    top: 7%;
+    box-shadow:  0px 40px 40px -20px rgba(13, 48, 189, 0.151826)
+    /* transform: translateY(50%); */
+}
+
+#cardBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img  {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0px 0px;
+
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+p {
+    font-size: 16px;
+}
+#cardText {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 300px;
+    font-size: 16px;
+}
+
+#innerCard {
+    display: flex;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+    border-width: 0em;
+    width: 350px;
+    padding-right: inherit;
+    padding-left: inherit;
+}
+
+#musicBadge {
+    object-fit: scale-down;
+}
+
+#planName {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+}
+
+#innerCardRight {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#changeText {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#changeText:hover {
+    text-decoration-line: none;
+    filter: brightness(175%);
+}
+
+#submitCancel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#submitButton {
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 0.75rem;
+    border-style: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding-top: .85rem;
+    padding-bottom: .85rem;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    margin-top: .5rem;
+}
+
+#submitButton:hover {
+    filter: brightness(175%);
+}
+
+#cancelButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: none;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #6c757d;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+#cancelButton:hover {
+    color: black;
+}
+
+@media (max-width: 376px) {
+    body {
+    background-image: url(images/pattern-background-mobile.svg);
+    }
+    #mainCard {
+        width: 90%
+    }
+    h3 {
+        font-size: 22px;
+    }
+    #cardText {
+        width: 90%;
+        font-size: 15px;
+    }
+    #innerCard {
+        width: 98%;
+    }
+    #planName {
+        font-size: 14px;
+    }
+    #innerCard p {
+        font-size: 14px;
+    }
+    #changeText {
+        font-size: 13px;
+    }
+
+}
